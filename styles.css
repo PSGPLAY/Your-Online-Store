@@ -24,6 +24,12 @@ nav {
    min-width: fit-content;
 }
 
+.left p{
+   transition:  font-size 0.5s;
+}
+.left p:hover{
+   font-size: 22px;
+}
 ul {
    display: flex;
    gap: 10px;
@@ -32,16 +38,21 @@ ul {
 }
 li{
    min-width: fit-content;
+   cursor: pointer;
+   transition: color 0.5s, font-size 0.5s;
+}
+li:hover{
+   color: red;
+   font-size: 19px;
 }
 
 .containner{
    background-color: #f4f8fb;
    display: flex;
-   justify-content: space-evenly;
-   padding-top: 30px;
+   padding-top: 25px;
+   justify-content: space-around;
    flex-wrap: wrap;
    gap: 30px;
-   height: 89vh;
 }
 .items{
    width: 280px;
@@ -78,6 +89,12 @@ li{
    cursor: pointer;
    background-color: #278f3f;
 }
+footer{
+   background-color: black;
+   color: white;
+   text-align: center;
+   padding: 20px 0;
+}
 @media screen and (max-width: 768px){
    .containner{
       height: auto;
@@ -85,5 +102,8 @@ li{
    .items{
       width: 230px;
       height: 300px;
+   }
+   selection{
+      padding-bottom: 10px;
    }
 }
